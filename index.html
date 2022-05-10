@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake or not?</title>
+    <script src="data.js"></script>
+    <script defer src="index.js"></script>
+    <link href="tailwind.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="h-screen bg-black pt-10 text-white flex flex-col">
+    <h1 class="w-full text-center text-5xl font-mono">Human or ai?</h1>
+    <p class="w-1/2 mx-auto text-center pt-3">One of these photos has a real human, the other was made by AI. Click on the photo you think features a real human.</p>
+    <div class="w-fit mx-auto flex flex-row mt-10">
+        <!-- class="order-last" -->
+        <a onclick="window.location.href = 'correct.html'" id="correct"><img id="correct_img" class="w-72 px-6 hover:brightness-75" src=""></a>
+        <a onclick="window.location.href = 'wrong.html'" id="wrong" >  <img id="wrong_img" class="w-72 px-6 hover:brightness-75" src=""></a>
+    </div>
+    <p class="w-3/4 mx-auto text-center mt-auto pb-5 text-sm">Made by <a href="https://github.com/adadarohan">Rohan Kapur</a>, the head of ICT. Images from <a href="https://unsplash.com/">Unsplash</a> and <a href="https://generated.photos/">Generated.photos</a></p>
+</body>
+</html>
