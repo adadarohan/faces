@@ -1,4 +1,4 @@
-const real_url = "/flickr/" + (Math.floor(Math.random() * 1000)).toString().padStart(5, '0') + ".png";
+const real_url = "/flickr/" + (Math.floor(Math.random() * 900)).toString().padStart(5, '0') + ".png";
 const eles = ['correct', 'wrong']
 const last_ele = eles[Math.floor(Math.random() * eles.length)];
 
